@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.weather-app {
+  min-height: 100vh;
+  background: url(./images/frank-mckenna-eXHeq48Z-Q4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  transition: 500ms;
+  opacity: 1;
+}
+
+.weather-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em 3em 4em 3em;
+  transition: 500ms;
+  opacity: 0;
+}
+
+.temp {
+  font-size: 100px;
+  display: inline;
+}
+
+.weather-container {
+  display: flex;
+  column-gap: 25px;
+}
+
+.city-time {
+  padding-top: 40px;
+}
+
+.switch {
+  position: absolute;
+  top: 5.7%;
+  right: 32%;
+  background: rgb(216, 216, 216);
+  color: black;
+  width: 3.5em;
+  height: 1.8rem;
+  border-radius: 100px;
+  display: flex;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.switch.change {
+  background: black;
+  color: rgb(216, 216, 216);
+}
+
+.indicator {
+  transition: all 300ms;
+  background: black;
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  border-radius: 100%;
+  transform: scale(1);
+}
+
+.indicator.change {
+  transform: scale(1);
+  background: rgb(216, 216, 216);
+  transform: translateX(30px);
+  z-index: 2;
+}
+
+.c-f {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather {
+  display: grid;
+  grid-template-rows: 52px;
+  padding-top: 26px;
+  text-align: center;
+}
+
+.panel {
+  height: 100%;
+  width: 30%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  position: absolute;
+  right: 0;
+  padding: 0 0 0 4em;
+  overflow-y: scroll;
+}
+
+.panel-top form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs input,
+input:focus {
+  background: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  padding: 3em 0.5em 0.5em 0em;
+  font-size: 13px;
+  border-bottom: 0px solid;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ccc;
+  width: 21.5em;
+}
+
+.search-btn {
+  width: 18%;
+}
+
+.search-btn i {
+  font-size: 20px;
+}
+
+.search-btn button {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  cursor: pointer;
+  border: none;
+}
+
+.recent-cities {
+  color: #ccc;
+}
+
+.active:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.places {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid;
+  width: 80%;
+}
+
+.places li {
+  list-style: none;
+  line-height: 3;
+}
+
+.weather-details {
+  padding-top: 2.5em;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .panel,
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  #input {
+    width: 30em;
+  }
+  .switch {
+    top: 15%;
+    right: 5%;
+  }
+  .temp {
+    font-size: 50px;
+    display: flex;
+    align-items: end;
+  }
+  .weather-container {
+    text-align: center;
+    column-gap: 10em;
+    flex: auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  html {
+    font-size: 15px;
+  }
+  .weather {
+    display: none;
+  }
+  .switch {
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .weather {
+    display: none;
+  }
+  .weather-container {
+    display: block;
+    padding-top: 4em;
+  }
+  .temp {
+    display: block;
+  }
+  #input {
+    width: 16.5em;
+  }
+  .switch {
+    top: 10%;
+  }
+}

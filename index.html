@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/Weather.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>The Weather</title>
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h1 class="brand">Weather</h1>
+            <div class="weather-container">
+                <h1 class="temp convert">16&#176</h1>
+                <div class="city-time">
+                    <h1 class="city">London</h1>
+                    <span>
+                        <small>
+                            <span class="time">06:09</span>
+                            -
+                            <span class="local-date">Monday, 9 September</span>
+                        </small>
+                    </span>
+                </div>
+                <div class="weather">
+                    <img src="./Icons/day/113.png" alt="" width="58" height="58" class="icon">
+                    <span class="condition">Cloudy</span>
+                </div>
+                <div class="switch">
+                    <div class="c-f">C</div>
+                    <div class="c-f">F</div>
+                    <span class="indicator"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-top">
+                <form id="form">
+                    <div class="inputs">
+                        <input type="search" placeholder="Another Location" id="input" autocomplete="off">
+                    </div>
+                    <div class="search-btn">
+                        <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="recent-cities">
+                <ul class="places">
+                    <li class="active city1">Gandhinagar</li>
+                    <li class="active city2">Ahmedabad</li>
+                    <li class="active city3">New York</li>
+                    <li class="active city4">London</li>
+                </ul>
+            </div>
+            <h3 class="weather-details">Weather Details</h3>
+            <div class="recent-cities">
+                <ul class="places">
+                    <li class="details">
+                        <span>Cloudy</span>
+                        <span class="cloud hide">-</span>
+                    </li>
+                    <li class="details">
+                        <span>Humidity</span>
+                        <span class="humidity hide"></span>
+                    </li>
+                    <li class="details">
+                        <span>Wind</span>
+                        <span class="wind hide"></span>
+                    </li>
+                    <li class="details">
+                        <span>Pressure</span>
+                        <span class="pressure hide"></span>
+                    </li>
+                    <li class="details">
+                        <span>Min. Temperature</span>
+                        <span class="min-temp hide convert f-temp"></span>
+                    </li>
+                    <li class="details">
+                        <span>Max. Temperature</span>
+                        <span class="max-temp hide convert f-temp"></span>
+                    </li>
+                    <li class="details">
+                        <span>Visibility</span>
+                        <span class="visibility hide"></span>
+                    </li>
+                    <li class="details">
+                        <span>Description</span>
+                        <span class="description hide" style="text-transform: capitalize"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/52a24909dc.js" crossorigin="anonymous"></script>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>
