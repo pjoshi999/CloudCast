@@ -1,5 +1,9 @@
 # CloudCast - Weather Forecasting App
 
-### Website Demo
+## Screenshots:
 
-https://pjoshi999.github.io/CloudCast/
+<img src="./Screenshots/The-Weather.png" alt="Screenshot-1">
+<img src="./Screenshots/The-Weather-1.png" alt="Screenshot-2">
+<img src="./Screenshots/The-Weather-2.png" alt="Screenshot-3">
+<img src="./Screenshots/The-Weather-3.png" alt="Screenshot-4">
+<img src="./Screenshots/The-Weather-4.png" alt="Screenshot-5">
