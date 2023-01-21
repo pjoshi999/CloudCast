@@ -2,4 +2,4 @@
 
 ### Website Demo
 
-https://pjoshi999.github.io/weather-app/
+https://pjoshi999.github.io/CloudCast/
