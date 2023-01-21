@@ -1,4 +1,4 @@
-# weather-app
+# CloudCast - Weather Forecasting App
 
 ### Website Demo
 
